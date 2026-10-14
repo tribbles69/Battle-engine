@@ -1,0 +1,63 @@
+# A small combined-arms battle: spears, samurai and horse on each side.
+name = "First Clash"
+description = "Pin them with your spears, then hit their flank with the horse."
+player_team = "blue"
+seed = 7
+
+[battlefield]
+width = 420
+height = 320
+
+# --- Blue (you), south, facing north ---
+[[units]]
+type = "yari_ashigaru"
+team = "blue"
+pos = [-35, -60]
+facing = 90
+name = "Left Spears"
+
+[[units]]
+type = "yari_ashigaru"
+team = "blue"
+pos = [35, -60]
+facing = 90
+name = "Right Spears"
+
+[[units]]
+type = "katana_samurai"
+team = "blue"
+pos = [0, -85]
+facing = 90
+
+[[units]]
+type = "yari_cavalry"
+team = "blue"
+pos = [-110, -70]
+facing = 90
+
+# --- Red (AI), north, facing south ---
+[[units]]
+type = "yari_ashigaru"
+team = "red"
+pos = [-35, 60]
+facing = 270
+name = "Red Spears"
+
+[[units]]
+type = "katana_samurai"
+team = "red"
+pos = [35, 60]
+facing = 270
+
+[[units]]
+type = "yari_ashigaru"
+team = "red"
+pos = [0, 85]
+facing = 270
+name = "Red Reserve"
+
+[[units]]
+type = "yari_cavalry"
+team = "red"
+pos = [110, 70]
+facing = 270

@@ -1,0 +1,21 @@
+# Milestone one: two blocks of spearmen on a flat field.
+name = "Spear Duel"
+description = "Two blocks of Yari Ashigaru. Hold the line, or charge?"
+player_team = "blue"
+seed = 1
+
+[battlefield]
+width = 300
+height = 240
+
+[[units]]
+type = "yari_ashigaru"
+team = "blue"
+pos = [0, -40]
+facing = 90
+
+[[units]]
+type = "yari_ashigaru"
+team = "red"
+pos = [0, 40]
+facing = 270

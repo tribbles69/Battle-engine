@@ -1,0 +1,76 @@
+# Fylking unit types.
+#
+# Each [table] is one unit type; the table name is its id in scenario files.
+# Add your own types here: the engine reads everything from this file.
+#
+#   men               soldiers in a full unit
+#   hp                hit points per soldier
+#   attack / defence  melee skill (higher attack = more hits landed, higher defence = fewer taken)
+#   armour            reduces damage taken
+#   damage            damage per hit
+#   charge_bonus      extra attack + damage for a few seconds after running into contact
+#   bonus_vs_mounted  % extra damage against cavalry; also lets the unit brace against charges
+#   walk_speed / run_speed   metres per second
+#   morale            base morale; the unit routs when current morale hits zero
+#   mass              charge impact and shoving weight (infantry = 1)
+#   radius            body radius in metres
+#   reach             weapon reach in metres
+#   attack_interval   seconds between swings
+#   mounted           true for horse
+#   spacing           metres between men in formation
+#   files             default formation width (men per rank)
+
+[yari_ashigaru]
+name = "Yari Ashigaru"
+men = 120
+hp = 14
+attack = 22
+defence = 32
+armour = 20
+damage = 3.5
+charge_bonus = 8
+bonus_vs_mounted = 40
+walk_speed = 1.4
+run_speed = 4.0
+morale = 40
+reach = 1.4
+attack_interval = 1.8
+spacing = 1.0
+files = 30
+
+[katana_samurai]
+name = "Katana Samurai"
+men = 80
+hp = 16
+attack = 45
+defence = 28
+armour = 45
+damage = 5
+charge_bonus = 16
+walk_speed = 1.5
+run_speed = 4.6
+morale = 60
+reach = 0.9
+attack_interval = 1.4
+spacing = 1.1
+files = 20
+
+[yari_cavalry]
+name = "Yari Cavalry"
+men = 40
+hp = 18
+attack = 30
+defence = 20
+armour = 30
+damage = 5
+charge_bonus = 40
+walk_speed = 3.0
+run_speed = 9.0
+morale = 55
+mass = 5
+radius = 0.9
+reach = 1.2
+attack_interval = 2.0
+mounted = true
+spacing = 2.2
+files = 10

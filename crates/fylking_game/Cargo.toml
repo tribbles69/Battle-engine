@@ -1,0 +1,13 @@
+[package]
+name = "fylking_game"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fylking"
+path = "src/main.rs"
+
+[dependencies]
+fylking_sim = { path = "../fylking_sim" }
+bevy = "0.19"
